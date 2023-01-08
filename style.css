@@ -40,7 +40,7 @@ body {
     position: relative;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 40%;
     overflow: hidden;
 }
 .profile-text .img img {
@@ -64,6 +64,46 @@ body {
 .profile-text h2 span {
     font-size: 80%;
     font-weight: 300;
+}
+.social {
+    margin-top: 10px;
+    width: 100%;
+}
+.social ul {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    
+}
+.social ul li {
+    list-style: none;
+}
+.fab{
+    font-size: 20px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    text-align:center;
+    text-decoration: none;
+    border-radius: 50%;
+    object-fit: 100%
+}
+.fab:hover{
+    opacity: 0.5;
+}
+.fa-facebook-f {
+    background: #3B5998;
+    color: white;
+}
+.fa-instagram {
+    background: #ee0a0a;
+    color: white;
+}
+.fa-github {
+    background: #403d3d;
+    color: rgb(216, 208, 208);
+    padding: 0;
+    font-size: 30px;
 }
 .personal-info {
     padding-top: 40px;
@@ -127,10 +167,49 @@ body {
 .container .right-side {
     position: relative ;
     background: white;
-    padding: 40px;
+    padding: 20px 40px 40px 40px;
+}
+.select {
+    margin-bottom: 20px;
+    font-size: 80%;
+}
+.select ul {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    
+}
+.select ul li {
+    list-style: none;
+}
+.btn {
+    width: 150px;
+    border-radius:40px;
+    border: 0;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 15px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.enabled-btn {
+    background:#489dc4;
+    color: white;
+}
+.enabled-btn:hover {
+    background: #024361;
+    color: white;
+}
+.disabled-btn {
+    background:#024361;
+    color: white;
 }
 .about {
     margin-bottom: 50px;
+}
+.about:nth-child(2){
+    padding-top: 10px; 
+    border-top: 1px solid rgba(15, 79, 152, 0.5); ;
 }
 .about:last-child {
     margin-bottom: 0;
@@ -173,6 +252,9 @@ p {
     justify-content: center;
     align-items: center;
 }
+.fa-link{
+    font-size: 12px;
+}
 .skills h4 {
     text-transform: uppercase;
     color: #848c99;
@@ -190,4 +272,29 @@ p {
     left: 0;
     height: 100%;
     background: #03a9f4;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .select ul {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .about .box {
+        flex-direction: column;
+    }
+    .about .box .category{
+        margin-bottom: 5px;
+    }
+    .select ul {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills .box {
+        grid-template-columns: repeat(1,1fr);
+    }
 }
