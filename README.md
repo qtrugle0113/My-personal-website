@@ -1,4 +1,4 @@
-# My online portfolio:<br> https://qtrugle0113.github.io/My-personal-website/
+# My website:<br> https://qtrugle0113.github.io/My-personal-website/
 ## Web:
 ![web](https://user-images.githubusercontent.com/86500497/211559900-3fab36cf-aa70-44d0-a8a5-6874194f99ee.png)
 ## Tablet:
